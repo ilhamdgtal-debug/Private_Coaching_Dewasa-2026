@@ -1,287 +1,212 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Coaching Dewasa</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zigzag Flowchart Aesthetic</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
     body {
         margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #f7f7f7;
-        color: #222;
+        padding: 0;
+        background: #f6f7fb;
+        font-family: "Poppins", sans-serif;
+        color: #333;
     }
 
-    .section {
-        padding: 25px 20px;
-    }
-
-    /* ------------------ TITLE BOX ------------------ */
-    .title-box {
-        background: #ffffff;
-        padding: 28px;
-        margin: 30px 0;
-        border-radius: 22px;
-        border: 2px solid #e5e5e5;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-    }
-
-    .title-inner {
-        border: 2px dashed #bcbcbc;
-        padding: 18px;
-        border-radius: 16px;
+    /* HEADER */
+    .header {
         text-align: center;
+        padding: 40px 20px;
+    }
+
+    .header .outer {
+        border: 3px solid #d4d4d4;
+        border-radius: 20px;
+        padding: 12px;
+        display: inline-block;
+    }
+    .header .inner {
+        border: 2px dashed #bcbcbc;
+        border-radius: 15px;
+        padding: 20px 30px;
+        background: white;
+    }
+    .header h1 {
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        color: #444;
+    }
+    .header p {
+        margin-top: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    /* FLOW SECTION */
+    .flow-section {
+        width: 90%;
+        max-width: 900px;
+        margin: 50px auto;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    /* ZIGZAG — kiri kanan */
+    .step:nth-child(even) {
+        align-items: flex-end;
+    }
+
+    /* CARD STYLE */
+    .card-wrapper {
+        max-width: 330px;
+    }
+
+    .card-outer {
+        border: 3px solid #d4d4d4;
+        border-radius: 20px;
+        padding: 12px;
+        background: #ffffff;
+    }
+
+    .card-inner {
+        border: 2px solid #dcdcdc;
+        border-radius: 15px;
+        padding: 20px;
         background: #fafafa;
     }
 
-    .title-inner h1 {
-        font-size: 23px;
-        margin: 0;
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
-    }
-
-    .subtitle {
-        text-align: center;
-        margin-top: 10px;
-        font-size: 17px;
-        font-weight: 500;
-        color: #333;
-    }
-
-    .subtitle span {
-        color: #4a4a4a;
-        font-weight: 600;
-    }
-
-    /* ------------------ FLOW SECTIONS ------------------ */
-    .flow-item {
-        background: #ffffff;
-        border-radius: 20px;
-        border: 2px solid #e5e5e5;
-        padding: 22px;
-        margin: 60px 0;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-        position: relative;
-    }
-
-    /* Garis penghubung */
-    .flow-item:after {
-        content: "";
-        width: 3px;
-        height: 50px;
-        background: #d0d0d0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -55px;
-        border-radius: 3px;
-    }
-
-    .flow-item:first-child:after {
-        display: none;
-    }
-
-    .flow-inner {
-        border: 2px dashed #cfcfcf;
-        padding: 18px;
-        border-radius: 14px;
-        background: #fcfcfc;
-    }
-
-    h3 {
-        margin-top: 0;
-        font-family: 'Playfair Display', serif;
+    .card-inner h2 {
+        font-family: "Playfair Display", serif;
         font-size: 20px;
-        font-weight: 700;
-        color: #2d2d2d;
-    }
-
-    p, ul {
-        line-height: 1.65;
-        font-size: 15px;
-        color: #333;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    /* ------------------ PRICE BOX ------------------ */
-    .price-box {
-        background: #ffffff;
-        border-radius: 20px;
-        border: 2px solid #e5e5e5;
-        margin: 60px 0;
-        padding: 30px;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-        text-align: center;
-    }
-
-    .price-box h2 {
-        margin: 0;
-        font-size: 30px;
-        font-weight: 700;
-        font-family: 'Poppins', sans-serif;
-        color: #222;
-    }
-
-    .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        background: #2f2f2f;
-        padding: 15px;
-        color: white;
-        font-weight: 600;
-        border-radius: 14px;
-        font-size: 18px;
-        margin-top: 25px;
-        text-decoration: none;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.2);
-    }
-
-    .btn:hover {
-        background: #1e1e1e;
-    }
-
-    small {
+        margin: 0 0 10px 0;
         color: #555;
-        margin-top: 10px;
-        display: block;
     }
 
+    .card-inner p {
+        font-size: 14px;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    /* IMAGE STYLE */
+    .step img {
+        width: 330px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-top: 15px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.08);
+    }
+
+    /* CONNECTOR LINE */
+    .line {
+        width: 2px;
+        height: 70px;
+        background: #d6d6d6;
+        margin: 0 auto;
+    }
+
+    /* DESKTOP RESPONSIVE */
+    @media (min-width: 768px) {
+        .step {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step img {
+            width: 360px;
+            height: 210px;
+        }
+    }
 </style>
 </head>
 <body>
 
-<!-- ================= TITLE ================= -->
-<div class="section">
-    <div class="title-box">
-        <div class="title-inner">
-            <h1>🌟 PRIVATE COACHING DEWASA — Break Mental Block & Reset Arah Hidup 2026</h1>
-        </div>
-    </div>
-
-    <div class="subtitle">
-        Early Bird <span>Rp 1.400.000</span><br>
-        (Harga Normal Rp 3.000.000)
-    </div>
-</div>
-
-<!-- =============== FLOW BEGINS =============== -->
-
-<!-- INTRO -->
-<div class="section">
-    <div class="flow-item">
-        <div class="flow-inner">
-            <p><strong>🔥 “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”</strong></p>
-
-            <p>Jika Anda merasa:</p>
-            <ul>
-                <li>Hidup terasa stagnan</li>
-                <li>Seperti ada yang “menahan” setiap kali ingin mulai</li>
-                <li>Penuh pikiran negatif</li>
-                <li>Burnout tapi tidak bisa berhenti</li>
-                <li>Tidak tahu arah hidup Anda</li>
-                <li>Sudah mencoba banyak cara tapi tetap lambat</li>
-            </ul>
-
-            <p>Program ini dirancang untuk Anda.</p>
-        </div>
-    </div>
-
-    <!-- APA ITU PROGRAM -->
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🎯 Apa Itu Program Ini?</h3>
-            <p>Program ini membantu Anda:</p>
-            <ul>
-                <li>Melepaskan beban mental lama</li>
-                <li>Menetralkan trauma kecil yang menghambat</li>
-                <li>Menghapus keyakinan negatif</li>
-                <li>Menemukan ulang tujuan hidup</li>
-                <li>Masuk 2026 dengan arah lebih jelas</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- METODE -->
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🧠 Metode yang Digunakan</h3>
-            <ul>
-                <li>Hypnotherapy sadar penuh</li>
-                <li>NLP Reframing cepat</li>
-                <li>Life Coaching berbasis tujuan</li>
-                <li>Emotional Release</li>
-                <li>Reset Identity Framework</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- ISI PROGRAM -->
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>💼 Isi Program</h3>
-            <ul>
-                <li>3× sesi private (90 menit/sesi) via Zoom</li>
-                <li>Assessment Mental Block & Life Direction 2026</li>
-                <li>Audio Hypno-Reset</li>
-                <li>Worksheet Reset Hidup</li>
-                <li>Support WhatsApp 14 hari</li>
-                <li>Garansi perubahan</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- TANDA BUTUH -->
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>💔 Tanda Anda Membutuhkan Program Ini</h3>
-            <ul>
-                <li>“Saya tahu harus berubah… tapi tidak mulai-mulai.”</li>
-                <li>“Ada rasa takut yang tidak saya pahami.”</li>
-                <li>“Saya ingin hidup berbeda, tapi sulit bergerak.”</li>
-                <li>“Orang lihat saya kuat, tapi saya kosong.”</li>
-                <li>“Saya kehilangan arah hidup.”</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- ILUSTRASI -->
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🖼️ Ilustrasi Perjalanan Emosi Peserta</h3>
-            <p>Masukkan gambar mental block, kebingungan, dan recovery.</p>
+<!-- HEADER -->
+<div class="header">
+    <div class="outer">
+        <div class="inner">
+            <h1>Alur Pelayanan Premium</h1>
+            <p>Flowchart versi aesthetic — soft, clear, dan professional</p>
         </div>
     </div>
 </div>
 
-<!-- PRICE -->
-<div class="section">
-    <div class="price-box">
-        <small>Harga Early Bird</small>
-        <h2>Rp 1.400.000</h2>
-        <small>Hanya 10 peserta pertama</small>
+<div class="flow-section">
 
-        <a href="https://wa.me/62811834992" class="btn">Daftar via WhatsApp</a>
-    </div>
-</div>
-
-<!-- CLOSING -->
-<div class="section">
-    <div class="flow-item">
-        <div class="flow-inner" style="text-align:center;">
-            <h3>🚀 Siap Reset Hidup Anda?</h3>
-            <p>Jika Anda ingin mulai lembaran baru dan menemukan arah hidup, saatnya mengambil langkah.</p>
-            <a href="https://wa.me/62811834992" class="btn">Klik untuk Daftar</a>
-            <small>Tinggal tulis: “Saya mau ambil Early Bird Coaching.”</small>
+    <!-- STEP 1 -->
+    <div class="step">
+        <div class="card-wrapper">
+            <div class="card-outer">
+                <div class="card-inner">
+                    <h2>1. Konsultasi Awal</h2>
+                    <p>Pengguna menghubungi admin untuk menyampaikan kebutuhan dan jenis pelayanan yang diinginkan.</p>
+                </div>
+            </div>
         </div>
+        <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?w=800" alt="">
     </div>
+
+    <div class="line"></div>
+
+    <!-- STEP 2 -->
+    <div class="step">
+        <div class="card-wrapper">
+            <div class="card-outer">
+                <div class="card-inner">
+                    <h2>2. Analisis Permintaan</h2>
+                    <p>Pihak admin menganalisis kebutuhan pengguna secara detail untuk menentukan solusi terbaik.</p>
+                </div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800" alt="">
+    </div>
+
+    <div class="line"></div>
+
+    <!-- STEP 3 -->
+    <div class="step">
+        <div class="card-wrapper">
+            <div class="card-outer">
+                <div class="card-inner">
+                    <h2>3. Penyusunan Rencana</h2>
+                    <p>Tim kemudian menyusun rencana atau konsep layanan yang akan diberikan kepada pengguna.</p>
+                </div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800" alt="">
+    </div>
+
+    <div class="line"></div>
+
+    <!-- STEP 4 -->
+    <div class="step">
+        <div class="card-wrapper">
+            <div class="card-outer">
+                <div class="card-inner">
+                    <h2>4. Eksekusi Layanan</h2>
+                    <p>Proses pengerjaan dimulai sesuai kesepakatan dengan hasil yang rapi, cepat, dan profesional.</p>
+                </div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800" alt="">
+    </div>
+
 </div>
 
 </body>
