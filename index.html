@@ -1,38 +1,288 @@
-<!-- HEADER BRIGHT LUXURY (Mobile First) -->
-<section class="mx-auto mt-10 mb-16 px-5 max-w-4xl">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Coaching Dewasa</title>
 
-  <!-- OUTER BORDER (Bright Luxury) -->
-  <div class="relative border-2 border-[#e5d8ff] bg-[#faf7ff] rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,116,216,0.15)]">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- INNER BORDER -->
-    <div class="absolute inset-3 border border-[#d8c8ff] rounded-2xl pointer-events-none"></div>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #f7f7f7;
+        color: #222;
+    }
 
-    <!-- CONTENT -->
-    <div class="relative">
+    .section {
+        padding: 25px 20px;
+    }
 
-      <!-- TITLE -->
-      <h1 class="title-font text-3xl md:text-5xl font-bold text-[#5436a8] leading-snug">
-        Private Coaching Dewasa — <br />
-        Break Mental Block & Reset Arah Hidup 2026
-      </h1>
+    /* ------------------ TITLE BOX ------------------ */
+    .title-box {
+        background: #ffffff;
+        padding: 28px;
+        margin: 30px 0;
+        border-radius: 22px;
+        border: 2px solid #e5e5e5;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
 
-      <!-- SUBTEXT -->
-      <p class="mt-5 text-base md:text-lg text-gray-600 leading-relaxed">
-        “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”
-        Jika Anda merasa stagnan, ragu, atau kehilangan arah — program ini dirancang untuk membantu Anda melakukan reset hidup dengan cara yang aman dan intensif.
-      </p>
+    .title-inner {
+        border: 2px dashed #bcbcbc;
+        padding: 18px;
+        border-radius: 16px;
+        text-align: center;
+        background: #fafafa;
+    }
 
-      <!-- CTA -->
-      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8">
-        <a href="https://wa.me/62811834992"
-           class="bg-[#4caf50] hover:bg-[#449b48] transition text-white font-semibold px-6 py-4 rounded-xl shadow-lg w-full sm:w-auto text-center">
-          Daftar Early Bird — Rp 1.400.000
-        </a>
-        <span class="text-gray-500 text-sm">Hanya 10 kursi</span>
-      </div>
+    .title-inner h1 {
+        font-size: 23px;
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
 
+    .subtitle {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .subtitle span {
+        color: #4a4a4a;
+        font-weight: 600;
+    }
+
+    /* ------------------ FLOW SECTIONS ------------------ */
+    .flow-item {
+        background: #ffffff;
+        border-radius: 20px;
+        border: 2px solid #e5e5e5;
+        padding: 22px;
+        margin: 60px 0;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+        position: relative;
+    }
+
+    /* Garis penghubung */
+    .flow-item:after {
+        content: "";
+        width: 3px;
+        height: 50px;
+        background: #d0d0d0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -55px;
+        border-radius: 3px;
+    }
+
+    .flow-item:first-child:after {
+        display: none;
+    }
+
+    .flow-inner {
+        border: 2px dashed #cfcfcf;
+        padding: 18px;
+        border-radius: 14px;
+        background: #fcfcfc;
+    }
+
+    h3 {
+        margin-top: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #2d2d2d;
+    }
+
+    p, ul {
+        line-height: 1.65;
+        font-size: 15px;
+        color: #333;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    /* ------------------ PRICE BOX ------------------ */
+    .price-box {
+        background: #ffffff;
+        border-radius: 20px;
+        border: 2px solid #e5e5e5;
+        margin: 60px 0;
+        padding: 30px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .price-box h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: #222;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: #2f2f2f;
+        padding: 15px;
+        color: white;
+        font-weight: 600;
+        border-radius: 14px;
+        font-size: 18px;
+        margin-top: 25px;
+        text-decoration: none;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+        background: #1e1e1e;
+    }
+
+    small {
+        color: #555;
+        margin-top: 10px;
+        display: block;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- ================= TITLE ================= -->
+<div class="section">
+    <div class="title-box">
+        <div class="title-inner">
+            <h1>🌟 PRIVATE COACHING DEWASA — Break Mental Block & Reset Arah Hidup 2026</h1>
+        </div>
     </div>
 
-  </div>
+    <div class="subtitle">
+        Early Bird <span>Rp 1.400.000</span><br>
+        (Harga Normal Rp 3.000.000)
+    </div>
+</div>
 
-</section>
+<!-- =============== FLOW BEGINS =============== -->
+
+<!-- INTRO -->
+<div class="section">
+    <div class="flow-item">
+        <div class="flow-inner">
+            <p><strong>🔥 “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”</strong></p>
+
+            <p>Jika Anda merasa:</p>
+            <ul>
+                <li>Hidup terasa stagnan</li>
+                <li>Seperti ada yang “menahan” setiap kali ingin mulai</li>
+                <li>Penuh pikiran negatif</li>
+                <li>Burnout tapi tidak bisa berhenti</li>
+                <li>Tidak tahu arah hidup Anda</li>
+                <li>Sudah mencoba banyak cara tapi tetap lambat</li>
+            </ul>
+
+            <p>Program ini dirancang untuk Anda.</p>
+        </div>
+    </div>
+
+    <!-- APA ITU PROGRAM -->
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🎯 Apa Itu Program Ini?</h3>
+            <p>Program ini membantu Anda:</p>
+            <ul>
+                <li>Melepaskan beban mental lama</li>
+                <li>Menetralkan trauma kecil yang menghambat</li>
+                <li>Menghapus keyakinan negatif</li>
+                <li>Menemukan ulang tujuan hidup</li>
+                <li>Masuk 2026 dengan arah lebih jelas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- METODE -->
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🧠 Metode yang Digunakan</h3>
+            <ul>
+                <li>Hypnotherapy sadar penuh</li>
+                <li>NLP Reframing cepat</li>
+                <li>Life Coaching berbasis tujuan</li>
+                <li>Emotional Release</li>
+                <li>Reset Identity Framework</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ISI PROGRAM -->
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>💼 Isi Program</h3>
+            <ul>
+                <li>3× sesi private (90 menit/sesi) via Zoom</li>
+                <li>Assessment Mental Block & Life Direction 2026</li>
+                <li>Audio Hypno-Reset</li>
+                <li>Worksheet Reset Hidup</li>
+                <li>Support WhatsApp 14 hari</li>
+                <li>Garansi perubahan</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TANDA BUTUH -->
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>💔 Tanda Anda Membutuhkan Program Ini</h3>
+            <ul>
+                <li>“Saya tahu harus berubah… tapi tidak mulai-mulai.”</li>
+                <li>“Ada rasa takut yang tidak saya pahami.”</li>
+                <li>“Saya ingin hidup berbeda, tapi sulit bergerak.”</li>
+                <li>“Orang lihat saya kuat, tapi saya kosong.”</li>
+                <li>“Saya kehilangan arah hidup.”</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ILUSTRASI -->
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🖼️ Ilustrasi Perjalanan Emosi Peserta</h3>
+            <p>Masukkan gambar mental block, kebingungan, dan recovery.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PRICE -->
+<div class="section">
+    <div class="price-box">
+        <small>Harga Early Bird</small>
+        <h2>Rp 1.400.000</h2>
+        <small>Hanya 10 peserta pertama</small>
+
+        <a href="https://wa.me/62811834992" class="btn">Daftar via WhatsApp</a>
+    </div>
+</div>
+
+<!-- CLOSING -->
+<div class="section">
+    <div class="flow-item">
+        <div class="flow-inner" style="text-align:center;">
+            <h3>🚀 Siap Reset Hidup Anda?</h3>
+            <p>Jika Anda ingin mulai lembaran baru dan menemukan arah hidup, saatnya mengambil langkah.</p>
+            <a href="https://wa.me/62811834992" class="btn">Klik untuk Daftar</a>
+            <small>Tinggal tulis: “Saya mau ambil Early Bird Coaching.”</small>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
