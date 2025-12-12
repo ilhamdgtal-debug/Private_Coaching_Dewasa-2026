@@ -1,314 +1,201 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Private Coaching Dewasa 2026</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luxury Flowchart Landing Page</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #fafafa;
+        color: #202020;
+    }
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    /* WRAPPER */
+    .section {
+        padding: 30px 20px;
+    }
 
-  <style>
-    body { background: #faf7ff; font-family: 'Inter', sans-serif; }
-    .title-font { font-family: 'Playfair Display', serif; }
-  </style>
+    /* TITLE BOX BESAR */
+    .title-box {
+        background: #ffffff;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 20px;
+        border: 2px solid #e7e7e7;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* BORDER DI DALAM TITLE BOX */
+    .title-inner {
+        border: 2px dashed #d4a017;
+        padding: 18px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .title-inner h1 {
+        font-size: 25px;
+        margin: 0;
+        color: #202020;
+        font-weight: 700;
+    }
+
+    /* FLOWCHART ZIGZAG */
+    .flow-item {
+        background: white;
+        border-radius: 18px;
+        border: 2px solid #e7e7e7;
+        padding: 20px;
+        margin: 40px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        position: relative;
+    }
+
+    /* BORDER DALAM */
+    .flow-inner {
+        border: 2px dashed #d4a017;
+        padding: 15px;
+        border-radius: 14px;
+        background: #fffdf7;
+    }
+
+    .flow-item:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .flow-item:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    /* FLOW CONNECTOR (GARIS PENYAMBUNG) */
+    .flow-item:after {
+        content: "";
+        width: 2px;
+        height: 40px;
+        background: #d4a017;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px;
+    }
+
+    .flow-item:first-child:after {
+        display: none;
+    }
+
+    /* CTA BUTTON */
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: #d4a017;
+        padding: 15px;
+        color: white;
+        border-radius: 14px;
+        font-size: 18px;
+        margin-top: 25px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .price-box {
+        background: white;
+        margin: 40px 0;
+        padding: 25px;
+        border: 2px solid #e7e7e7;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .price-box h2 {
+        font-size: 28px;
+        margin: 0;
+        color: #d4a017;
+    }
+
+    .price-box small {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+    }
+</style>
 </head>
+<body>
 
-<body class="text-gray-700">
-
-  <!-- HEADER -->
-<!-- HEADER WRAPPER -->
-<section class="max-w-5xl mx-auto mt-20 mb-16 px-6">
-
-  <!-- OUTER BORDER -->
-  <div class="relative border-2 border-[#233143] rounded-3xl p-6 bg-[#0b1623] shadow-xl">
-
-    <!-- INNER BORDER -->
-    <div class="absolute inset-4 border border-[#32465c] rounded-2xl pointer-events-none"></div>
-
-    <!-- CONTENT -->
-    <div class="relative">
-
-      <h1 class="title-font text-4xl md:text-5xl font-bold text-white leading-tight">
-        Private Coaching Dewasa — <br />
-        Break Mental Block & Reset Arah Hidup 2026
-      </h1>
-
-      <p class="mt-5 text-lg text-gray-300 max-w-3xl">
-        “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”
-        Jika Anda merasa stagnan, ragu, kehilangan arah—program ini dirancang untuk membantu reset hidup Anda secara intensif.
-      </p>
-
-      <!-- CTA + SLOT INFO -->
-      <div class="flex items-center flex-wrap gap-6 mt-10">
-        <a href="https://wa.me/62811834992"
-           class="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg">
-          Daftar Early Bird — Rp 1.400.000
-        </a>
-        <span class="text-gray-400">Hanya 10 kursi</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- FLOWCHART WRAPPER -->
-  <section class="max-w-6xl mx-auto relative">
-
-    <!-- Vertical connecting line -->
-    <div class="absolute left-1/2 top-0 w-1 bg-purple-300 h-full -translate-x-1/2"></div>
-
-
-
-    <!-- ===================================== -->
-    <!-- 1 — PEMBUKA -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-start">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-purple-200 w-[80%] relative">
-
-          <!-- INNER BORDER -->
-          <div class="absolute inset-4 border border-purple-300 rounded-2xl pointer-events-none"></div>
-
-          <!-- IMAGE -->
-          <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg" 
-               class="rounded-xl mb-6 w-full h-64 object-cover" alt="Emotional burden">
-
-          <h2 class="title-font text-3xl text-purple-700 font-semibold mb-4">
-            “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”
-          </h2>
-
-          <p class="leading-relaxed text-gray-700">
-            Jika Anda merasa: hidup stagnan, takut mulai, burnout, penuh pikiran negatif, kehilangan arah, atau merasa ada sesuatu yang menahan — program ini dirancang khusus untuk Anda.
-          </p>
+<!-- ===================== JUDUL ===================== -->
+<div class="section">
+    <div class="title-box">
+        <div class="title-inner">
+            <h1>Private Coaching Dewasa — Break Mental Block & Reset Arah Hidup 2026</h1>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-purple-500 rounded-full -translate-x-1/2"></span>
     </div>
+</div>
 
+<!-- ===================== DESKRIPSI ===================== -->
+<div class="section">
+    <p style="font-size: 15px; line-height: 1.6;">
+        “Kadang bukan hidup yang berat... tapi ada sesuatu di dalam diri yang belum selesai.”
+        Jika Anda merasa stagnan, ragu, atau kehilangan arah — program ini dirancang khusus untuk membantu reset secara aman, lembut, dan intensif.
+    </p>
+</div>
 
+<!-- ===================== FLOW ZIGZAG ===================== -->
 
-    <!-- ===================================== -->
-    <!-- 2 — APA ITU PROGRAM INI -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-end">
+<div class="section">
 
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-blue-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-blue-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-blue-700 font-semibold mb-4">
-            Apa Itu Program Ini?
-          </h2>
-
-          <p class="leading-relaxed">
-            <b>Break Mental Block & Reset Arah Hidup 2026</b> adalah coaching intensif 1-on-1 untuk membantu Anda:
-          </p>
-
-          <ul class="list-disc pl-6 mt-3 space-y-1">
-            <li>Melepaskan beban mental lama</li>
-            <li>Menetralkan trauma kecil</li>
-            <li>Menghapus keyakinan negatif</li>
-            <li>Menemukan ulang tujuan hidup</li>
-            <li>Memulai 2026 dengan arah hidup yang jelas</li>
-          </ul>
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>✨ Langkah 1 — Konsultasi Awal</h3>
+            <p>Kita mapping dulu masalah utama yang menghambat hidup Anda.</p>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-blue-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-
-
-
-    <!-- ===================================== -->
-    <!-- 3 — METODE -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-start">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-pink-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-pink-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-pink-700 font-semibold mb-4">
-            Metode yang Digunakan
-          </h2>
-
-          <p class="leading-relaxed">Program ini menggabungkan teknik yang terbukti efektif:</p>
-          <ul class="list-disc pl-6 mt-3 space-y-1">
-            <li>Hypnotherapy sadar penuh</li>
-            <li>NLP Reframing cepat</li>
-            <li>Life Coaching berbasis tujuan</li>
-            <li>Emotional Release</li>
-            <li>Reset Identity Framework</li>
-          </ul>
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🧭 Langkah 2 — Reset Arah Hidup</h3>
+            <p>Menyusun ulang arah hidup dengan metode praktis & spiritual.</p>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-pink-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-
-
-    <!-- ===================================== -->
-    <!-- 4 — ISI PROGRAM -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-end">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-green-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-green-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-green-700 font-semibold mb-4">
-            Isi Program
-          </h2>
-
-          <ul class="list-disc pl-6 space-y-1">
-            <li>3× sesi private coaching (90 menit/sesi)</li>
-            <li>Assessment Mental Block & Life Direction 2026</li>
-            <li>Audio Hypno-Reset khusus peserta</li>
-            <li>Worksheet Reset Hidup 2026</li>
-            <li>Support WhatsApp 14 hari</li>
-            <li>Garansi perubahan (ulang sesi pertama gratis)</li>
-          </ul>
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🧠 Langkah 3 — Break Mental Block</h3>
+            <p>Melepaskan hambatan mental yang membuat Anda stuck.</p>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-green-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-
-
-    <!-- ===================================== -->
-    <!-- 5 — TANDA ANDA MEMBUTUHKAN -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-start">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-yellow-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-yellow-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/3060714/pexels-photo-3060714.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-yellow-700 font-semibold mb-4">
-            Tanda Anda Membutuhkan Program Ini
-          </h2>
-
-          <p class="leading-relaxed">
-            Jika Anda merasa:
-          </p>
-
-          <ul class="list-disc pl-6 mt-3 space-y-1">
-            <li>“Saya tahu harus berubah… tapi tidak mulai-mulai.”</li>
-            <li>“Ada rasa takut yang saya sendiri tidak paham.”</li>
-            <li>“Saya ingin hidup berbeda, tapi kok sulit bergerak.”</li>
-            <li>“Orang lihat saya kuat, tapi hati saya kosong.”</li>
-            <li>“Saya kehilangan arah hidup.”</li>
-          </ul>
-
+    <div class="flow-item">
+        <div class="flow-inner">
+            <h3>🌱 Langkah 4 — Transformasi Diri</h3>
+            <p>Upgrade mindset & inner system agar perubahan bertahan lama.</p>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-yellow-500 rounded-full -translate-x-1/2"></span>
     </div>
 
+</div>
 
+<!-- ===================== PRICE BOX ===================== -->
+<div class="section">
+    <div class="price-box">
+        <small>Early Bird</small>
+        <h2>Rp 1.400.000</h2>
+        <small>Harga normal Rp 3.000.000</small>
+        <a href="https://wa.me/62xxxxxxxxxxx" class="btn">Daftar via WhatsApp</a>
+    </div>
+</div>
 
-    <!-- ===================================== -->
-    <!-- 6 — HARGA -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-end">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-purple-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-purple-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/834897/pexels-photo-834897.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-purple-700 font-semibold mb-4">
-            Harga Early Bird (Terbatas)
-          </h2>
-
-          <p class="text-2xl font-bold text-purple-700">Rp 1.400.000</p>
-          <p class="text-gray-500">(Harga normal Rp 3.000.000)</p>
-          <p class="mt-2 font-semibold text-red-600">❗ Hanya untuk 10 peserta pertama</p>
-
+<!-- ===================== GARANSI ===================== -->
+<div class="section">
+    <div class="flow-item">
+        <div class="flow-inner" style="text-align:center;">
+            <h3>🔒 Garansi Perubahan</h3>
+            <p>Sesi pertama boleh diulang gratis jika tidak terasa efeknya.</p>
         </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-purple-500 rounded-full -translate-x-1/2"></span>
     </div>
-
-
-
-    <!-- ===================================== -->
-    <!-- 7 — CTA -->
-    <!-- ===================================== -->
-    <div class="relative mb-32">
-      <div class="flex justify-start">
-
-        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-indigo-200 w-[80%] relative">
-
-          <div class="absolute inset-4 border border-indigo-300 rounded-2xl pointer-events-none"></div>
-
-          <img src="https://images.pexels.com/photos/4064173/pexels-photo-4064173.jpeg"
-               class="rounded-xl mb-6 w-full h-64 object-cover">
-
-          <h2 class="title-font text-3xl text-indigo-700 font-semibold mb-4">
-            Siap Reset Hidup Anda Sebelum 2026?
-          </h2>
-
-          <p class="leading-relaxed">
-            Jika Anda ingin mulai lembaran baru, mental lebih ringan, punya arah hidup jelas, dan berhenti terjebak pola lama — ini waktu terbaik memulai.
-          </p>
-
-          <a href="https://wa.me/62811834992" 
-             class="block mt-6 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-4 rounded-2xl font-semibold text-lg shadow-md">
-            Daftar via WhatsApp
-          </a>
-
-        </div>
-
-      </div>
-
-      <span class="absolute left-1/2 top-10 w-6 h-6 bg-indigo-500 rounded-full -translate-x-1/2"></span>
-    </div>
-
-  </section>
-
-
-  <footer class="text-center py-20 text-gray-500">
-    © 2026 Coaching Reset Hidup — All rights reserved.
-  </footer>
+</div>
 
 </body>
 </html>
