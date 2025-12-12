@@ -1,112 +1,106 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+ <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Break Mental Block & Reset Arah Hidup</title>
 
-  <!-- Fast fonts -->
+  <!-- Preload fonts (lebih cepat) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Minimal Tailwind (minify-first) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 
   <style>
     body { background: #faf7ff; font-family: 'Inter', sans-serif; }
+    .title-font { font-family: 'Playfair Display', serif; }
+    /* Lebih ringan & tetap cantik */
+    .soft-shadow { box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+  </style>
+</head>
 
-    /* SHADOW super ringan (anti lag) */
-    .soft-shadow { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-
-    /* BORDER double tapi ringan */
-    .inner-border { 
-      border: 1px solid rgba(0,0,0,0.08); 
-      border-radius: 16px;
-    }
-
-    /* ZIGZAG Safe Mode */
-    .step-box { width: 88%; }
-
-    /* Circle joint ringan */
-    .joint {
-      width: 14px;
-      height: 14px;
-      border-radius: 999px;
-      background: #a78bfa;
-    }
   </style>
 </head>
 
 <body class="text-gray-700">
 
   <!-- HEADER -->
-  <header class="text-center py-14 px-5">
-    <h1 class="text-4xl font-bold text-purple-700 leading-snug">
-      Break Mental Block & Reset Arah Hidup 2026
+  <header class="text-center py-16 px-6">
+    <h1 class="title-font text-5xl font-bold text-purple-700">
+      Break Mental Block & Reset Arah Hidup
     </h1>
-    <p class="mt-3 text-gray-600 text-lg">PRIVATE COACHING DEWASA</p>
+    <p class="mt-4 text-lg text-gray-600">PRIVATE COACHING DEWASA 2026</p>
+
+    <p class="mt-6 text-2xl font-semibold text-purple-600">
+      
+    </p>
   </header>
 
-  <!-- VERTICAL LINE -->
-  <div class="max-w-6xl mx-auto relative">
-    <div class="absolute left-1/2 top-0 w-[2px] bg-purple-200 h-full -translate-x-1/2"></div>
+
+  <!-- FLOWCHART WRAPPER -->
+  <section class="max-w-6xl mx-auto relative">
+
+    <!-- Vertical connecting line -->
+    <div class="absolute left-1/2 top-0 w-1 bg-purple-300 h-full -translate-x-1/2"></div>
+
+
 
     <!-- ===================================== -->
-    <!-- REUSABLE COMPONENT (dipakai semua step) -->
+    <!-- 1 — PEMBUKA -->
     <!-- ===================================== -->
-    <!--
-      Format:
-      <div class="relative mb-24">
-        <div class="flex justify-start or justify-end">
-          <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-purple-100 relative">
-            <div class="absolute inset-3 inner-border pointer-events-none"></div>
-            (image)
-            (judul)
-            (konten)
-          </div>
-        </div>
-        <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
-      </div>
-    -->
-
-    <!-- 1 -->
-    <div class="relative mb-24">
+    <div class="relative mb-32">
       <div class="flex justify-start">
-        <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-purple-100 relative">
-          <div class="absolute inset-3 inner-border pointer-events-none"></div>
 
-          <img 
-            src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg" 
-            class="rounded-xl mb-5 w-full h-56 object-cover"
-            loading="lazy">
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-purple-200 w-[80%] relative">
 
-          <h2 class="text-2xl text-purple-700 font-semibold mb-3 leading-snug">
-            “Kadang bukan hidup yang berat… tapi ada sesuatu dalam diri yang belum selesai.”
+          <!-- INNER BORDER -->
+          <div class="absolute inset-4 border border-purple-300 rounded-2xl pointer-events-none"></div>
+
+          <!-- IMAGE -->
+          <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg" 
+               class="rounded-xl mb-6 w-full h-64 object-cover" alt="Emotional burden">
+
+          <h2 class="title-font text-3xl text-purple-700 font-semibold mb-4">
+            “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”
           </h2>
 
-          <p class="text-sm leading-relaxed">
-            Jika Anda merasa hidup stagnan, takut mulai, burnout, atau kehilangan arah—program ini dirancang khusus untuk Anda.
+          <p class="leading-relaxed text-gray-700">
+            Jika Anda merasa: hidup stagnan, takut mulai, burnout, penuh pikiran negatif, kehilangan arah, atau merasa ada sesuatu yang menahan — program ini dirancang khusus untuk Anda.
           </p>
         </div>
+
       </div>
-      <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-purple-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-    <!-- 2 -->
-    <div class="relative mb-24">
+
+
+    <!-- ===================================== -->
+    <!-- 2 — APA ITU PROGRAM INI -->
+    <!-- ===================================== -->
+    <div class="relative mb-32">
       <div class="flex justify-end">
-        <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-blue-100 relative">
-          <div class="absolute inset-3 inner-border pointer-events-none"></div>
 
-          <img 
-            src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
-            class="rounded-xl mb-5 w-full h-56 object-cover"
-            loading="lazy">
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-blue-200 w-[80%] relative">
 
-          <h2 class="text-2xl text-blue-700 font-semibold mb-3">Apa Itu Program Ini?</h2>
+          <div class="absolute inset-4 border border-blue-300 rounded-2xl pointer-events-none"></div>
 
-          <ul class="list-disc pl-4 text-sm space-y-1">
+          <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
+               class="rounded-xl mb-6 w-full h-64 object-cover">
+
+          <h2 class="title-font text-3xl text-blue-700 font-semibold mb-4">
+            Apa Itu Program Ini?
+          </h2>
+
+          <p class="leading-relaxed">
+            <b>Break Mental Block & Reset Arah Hidup 2026</b> adalah coaching intensif 1-on-1 untuk membantu Anda:
+          </p>
+
+          <ul class="list-disc pl-6 mt-3 space-y-1">
             <li>Melepaskan beban mental lama</li>
             <li>Menetralkan trauma kecil</li>
             <li>Menghapus keyakinan negatif</li>
@@ -114,24 +108,34 @@
             <li>Memulai 2026 dengan arah hidup yang jelas</li>
           </ul>
         </div>
+
       </div>
-      <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-blue-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-    <!-- 3 -->
-    <div class="relative mb-24">
+
+
+
+    <!-- ===================================== -->
+    <!-- 3 — METODE -->
+    <!-- ===================================== -->
+    <div class="relative mb-32">
       <div class="flex justify-start">
-        <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-pink-100 relative">
-          <div class="absolute inset-3 inner-border pointer-events-none"></div>
 
-          <img 
-            src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
-            class="rounded-xl mb-5 w-full h-56 object-cover"
-            loading="lazy">
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-pink-200 w-[80%] relative">
 
-          <h2 class="text-2xl text-pink-700 font-semibold mb-3">Metode yang Digunakan</h2>
+          <div class="absolute inset-4 border border-pink-300 rounded-2xl pointer-events-none"></div>
 
-          <ul class="list-disc pl-4 text-sm space-y-1">
+          <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
+               class="rounded-xl mb-6 w-full h-64 object-cover">
+
+          <h2 class="title-font text-3xl text-pink-700 font-semibold mb-4">
+            Metode yang Digunakan
+          </h2>
+
+          <p class="leading-relaxed">Program ini menggabungkan teknik yang terbukti efektif:</p>
+          <ul class="list-disc pl-6 mt-3 space-y-1">
             <li>Hypnotherapy sadar penuh</li>
             <li>NLP Reframing cepat</li>
             <li>Life Coaching berbasis tujuan</li>
@@ -139,85 +143,152 @@
             <li>Reset Identity Framework</li>
           </ul>
         </div>
+
       </div>
-      <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-pink-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-    <!-- 4 -->
-    <div class="relative mb-24">
+
+
+    <!-- ===================================== -->
+    <!-- 4 — ISI PROGRAM -->
+    <!-- ===================================== -->
+    <div class="relative mb-32">
       <div class="flex justify-end">
-        <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-green-100 relative">
-          <div class="absolute inset-3 inner-border pointer-events-none"></div>
 
-          <img 
-            src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg"
-            class="rounded-xl mb-5 w-full h-56 object-cover"
-            loading="lazy">
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-green-200 w-[80%] relative">
 
-          <h2 class="text-2xl text-green-700 font-semibold mb-3">Isi Program</h2>
+          <div class="absolute inset-4 border border-green-300 rounded-2xl pointer-events-none"></div>
 
-          <ul class="list-disc pl-4 text-sm space-y-1">
-            <li>3× sesi private coaching</li>
-            <li>Assessment Mental Block & Life Direction</li>
-            <li>Audio Hypno-Reset</li>
+          <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg"
+               class="rounded-xl mb-6 w-full h-64 object-cover">
+
+          <h2 class="title-font text-3xl text-green-700 font-semibold mb-4">
+            Isi Program
+          </h2>
+
+          <ul class="list-disc pl-6 space-y-1">
+            <li>3× sesi private coaching (90 menit/sesi)</li>
+            <li>Assessment Mental Block & Life Direction 2026</li>
+            <li>Audio Hypno-Reset khusus peserta</li>
             <li>Worksheet Reset Hidup 2026</li>
             <li>Support WhatsApp 14 hari</li>
-            <li>Garansi perubahan</li>
+            <li>Garansi perubahan (ulang sesi pertama gratis)</li>
           </ul>
         </div>
+
       </div>
-      <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-green-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-    <!-- 5 -->
-    <div class="relative mb-24">
+
+
+    <!-- ===================================== -->
+    <!-- 5 — TANDA ANDA MEMBUTUHKAN -->
+    <!-- ===================================== -->
+    <div class="relative mb-32">
       <div class="flex justify-start">
-        <div class="step-box bg-white soft-shadow p-7 rounded-2xl border border-yellow-100 relative">
-          <div class="absolute inset-3 inner-border pointer-events-none"></div>
 
-          <img 
-            src="https://images.pexels.com/photos/3060714/pexels-photo-3060714.jpeg"
-            class="rounded-xl mb-5 w-full h-56 object-cover"
-            loading="lazy">
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-yellow-200 w-[80%] relative">
 
-          <h2 class="text-2xl text-yellow-700 font-semibold mb-3">Tanda Anda Membutuhkan</h2>
+          <div class="absolute inset-4 border border-yellow-300 rounded-2xl pointer-events-none"></div>
 
-          <ul class="list-disc pl-4 text-sm space-y-1">
-            <li>“Saya tahu harus berubah… tapi tidak mulai.”</li>
-            <li>“Ada rasa takut yang tidak saya pahami.”</li>
-            <li>“Saya ingin hidup berbeda tapi sulit bergerak.”</li>
-            <li>“Terlihat kuat tapi sebenarnya kosong.”</li>
+          <img src="https://images.pexels.com/photos/3060714/pexels-photo-3060714.jpeg"
+               class="rounded-xl mb-6 w-full h-64 object-cover">
+
+          <h2 class="title-font text-3xl text-yellow-700 font-semibold mb-4">
+            Tanda Anda Membutuhkan Program Ini
+          </h2>
+
+          <p class="leading-relaxed">
+            Jika Anda merasa:
+          </p>
+
+          <ul class="list-disc pl-6 mt-3 space-y-1">
+            <li>“Saya tahu harus berubah… tapi tidak mulai-mulai.”</li>
+            <li>“Ada rasa takut yang saya sendiri tidak paham.”</li>
+            <li>“Saya ingin hidup berbeda, tapi kok sulit bergerak.”</li>
+            <li>“Orang lihat saya kuat, tapi hati saya kosong.”</li>
             <li>“Saya kehilangan arah hidup.”</li>
           </ul>
+
         </div>
+
       </div>
-      <span class="absolute joint left-1/2 top-7 -translate-x-1/2"></span>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-yellow-500 rounded-full -translate-x-1/2"></span>
     </div>
 
-  </div>
 
-  <!-- HARGA -->
-  <div class="max-w-md mx-auto text-center mt-20 mb-20 bg-white soft-shadow 
-              p-7 rounded-2xl border border-purple-100 relative">
 
-    <div class="absolute inset-3 inner-border pointer-events-none"></div>
+    <!-- ===================================== -->
+    <!-- 6 — HARGA -->
+    <!-- ===================================== -->
+  
 
-    <h2 class="text-3xl text-purple-700 font-semibold mb-3">
-      Harga Early Bird
-    </h2>
 
-    <p class="text-3xl font-bold text-purple-700">Rp 1.400.000</p>
-    <p class="text-gray-500">(Normal Rp 3.000.000)</p>
-    <p class="mt-2 font-semibold text-red-500">❗ Terbatas 10 peserta</p>
 
-    <a href="https://lynk.id/potensiwise/e9xdzq9gl20m"
-       class="block mt-5 bg-purple-600 text-white py-3 rounded-xl font-semibold">
-       Daftar Sekarang
-    </a>
-  </div>
+    <!-- ===================================== -->
+    <!-- 7 — CTA -->
+    <!-- ===================================== -->
+    <div class="relative mb-26">
+      <div class="flex justify-start">
 
-  <footer class="text-center py-10 text-gray-400 text-sm">
-    © 2026 Coaching Reset Hidup
+        <div class="bg-white shadow-xl p-10 rounded-3xl border-2 border-indigo-200 w-[80%] relative">
+
+          <div class="absolute inset-4 border border-indigo-300 rounded-2xl pointer-events-none"></div>
+
+          <img src="https://images.pexels.com/photos/4064173/pexels-photo-4064173.jpeg"
+               class="rounded-xl mb-6 w-full h-64 object-cover">
+
+          <h2 class="title-font text-3xl text-indigo-700 font-semibold mb-4">
+            Siap Reset Hidup Anda Sebelum 2026?
+          </h2>
+
+          <p class="leading-relaxed">
+            Jika Anda ingin mulai lembaran baru, mental lebih ringan, punya arah hidup jelas, dan berhenti terjebak pola lama — ini waktu terbaik memulai.
+          </p>
+
+         
+
+        </div>
+
+      </div>
+
+      <span class="absolute left-1/2 top-10 w-6 h-6 bg-indigo-500 rounded-full -translate-x-1/2"></span>
+    </div>
+
+  </section>
+  <!-- ===================================== -->
+<!-- 8 — HARGA FINAL -->
+<!-- ===================================== -->
+<div class="max-w-4xl mx-auto text-center mt-20 mb-32 bg-white shadow-xl 
+            p-10 rounded-3xl border-2 border-purple-200 relative">
+
+  <div class="absolute inset-4 border border-purple-300 rounded-2xl pointer-events-none"></div>
+
+  <h2 class="title-font text-4xl text-purple-700 font-semibold mb-4">
+    Harga Early Bird (Terbatas)
+  </h2>
+
+  <p class="text-3xl font-bold text-purple-700">Rp 1.400.000</p>
+  <p class="text-gray-500 text-lg">(Harga normal Rp 3.000.000)</p>
+  <p class="mt-2 font-semibold text-red-600">❗ Hanya untuk 10 peserta pertama</p>
+
+  <a href="https://lynk.id/potensiwise/e9xdzq9gl20m" 
+     class="block mt-6 bg-purple-600 hover:bg-purple-700 
+            text-white text-center py-4 rounded-2xl font-semibold 
+            text-lg shadow-md">
+    Daftar Sekarang
+  </a>
+</div>
+
+
+
+  <footer class="text-center py-20 text-gray-500">
+    © 2026 Coaching Reset Hidup — All rights reserved.
   </footer>
 
 </body>
