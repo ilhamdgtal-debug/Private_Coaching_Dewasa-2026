@@ -1,201 +1,38 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Luxury Flowchart Landing Page</title>
+<!-- HEADER BRIGHT LUXURY (Mobile First) -->
+<section class="mx-auto mt-10 mb-16 px-5 max-w-4xl">
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #fafafa;
-        color: #202020;
-    }
+  <!-- OUTER BORDER (Bright Luxury) -->
+  <div class="relative border-2 border-[#e5d8ff] bg-[#faf7ff] rounded-3xl p-6 shadow-[0_4px_20px_rgba(140,116,216,0.15)]">
 
-    /* WRAPPER */
-    .section {
-        padding: 30px 20px;
-    }
+    <!-- INNER BORDER -->
+    <div class="absolute inset-3 border border-[#d8c8ff] rounded-2xl pointer-events-none"></div>
 
-    /* TITLE BOX BESAR */
-    .title-box {
-        background: #ffffff;
-        padding: 25px;
-        margin: 20px 0;
-        border-radius: 20px;
-        border: 2px solid #e7e7e7;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+    <!-- CONTENT -->
+    <div class="relative">
 
-    /* BORDER DI DALAM TITLE BOX */
-    .title-inner {
-        border: 2px dashed #d4a017;
-        padding: 18px;
-        border-radius: 15px;
-        text-align: center;
-    }
+      <!-- TITLE -->
+      <h1 class="title-font text-3xl md:text-5xl font-bold text-[#5436a8] leading-snug">
+        Private Coaching Dewasa — <br />
+        Break Mental Block & Reset Arah Hidup 2026
+      </h1>
 
-    .title-inner h1 {
-        font-size: 25px;
-        margin: 0;
-        color: #202020;
-        font-weight: 700;
-    }
+      <!-- SUBTEXT -->
+      <p class="mt-5 text-base md:text-lg text-gray-600 leading-relaxed">
+        “Kadang bukan hidup yang berat… tapi ada sesuatu di dalam diri yang belum selesai.”
+        Jika Anda merasa stagnan, ragu, atau kehilangan arah — program ini dirancang untuk membantu Anda melakukan reset hidup dengan cara yang aman dan intensif.
+      </p>
 
-    /* FLOWCHART ZIGZAG */
-    .flow-item {
-        background: white;
-        border-radius: 18px;
-        border: 2px solid #e7e7e7;
-        padding: 20px;
-        margin: 40px 0;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-        position: relative;
-    }
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-8">
+        <a href="https://wa.me/62811834992"
+           class="bg-[#4caf50] hover:bg-[#449b48] transition text-white font-semibold px-6 py-4 rounded-xl shadow-lg w-full sm:w-auto text-center">
+          Daftar Early Bird — Rp 1.400.000
+        </a>
+        <span class="text-gray-500 text-sm">Hanya 10 kursi</span>
+      </div>
 
-    /* BORDER DALAM */
-    .flow-inner {
-        border: 2px dashed #d4a017;
-        padding: 15px;
-        border-radius: 14px;
-        background: #fffdf7;
-    }
-
-    .flow-item:nth-child(even) {
-        margin-left: 0;
-    }
-
-    .flow-item:nth-child(odd) {
-        margin-right: 0;
-    }
-
-    /* FLOW CONNECTOR (GARIS PENYAMBUNG) */
-    .flow-item:after {
-        content: "";
-        width: 2px;
-        height: 40px;
-        background: #d4a017;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -40px;
-    }
-
-    .flow-item:first-child:after {
-        display: none;
-    }
-
-    /* CTA BUTTON */
-    .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        background: #d4a017;
-        padding: 15px;
-        color: white;
-        border-radius: 14px;
-        font-size: 18px;
-        margin-top: 25px;
-        text-decoration: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    .price-box {
-        background: white;
-        margin: 40px 0;
-        padding: 25px;
-        border: 2px solid #e7e7e7;
-        border-radius: 20px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-        text-align: center;
-    }
-
-    .price-box h2 {
-        font-size: 28px;
-        margin: 0;
-        color: #d4a017;
-    }
-
-    .price-box small {
-        display: block;
-        margin-bottom: 10px;
-        color: #555;
-    }
-</style>
-</head>
-<body>
-
-<!-- ===================== JUDUL ===================== -->
-<div class="section">
-    <div class="title-box">
-        <div class="title-inner">
-            <h1>Private Coaching Dewasa — Break Mental Block & Reset Arah Hidup 2026</h1>
-        </div>
-    </div>
-</div>
-
-<!-- ===================== DESKRIPSI ===================== -->
-<div class="section">
-    <p style="font-size: 15px; line-height: 1.6;">
-        “Kadang bukan hidup yang berat... tapi ada sesuatu di dalam diri yang belum selesai.”
-        Jika Anda merasa stagnan, ragu, atau kehilangan arah — program ini dirancang khusus untuk membantu reset secara aman, lembut, dan intensif.
-    </p>
-</div>
-
-<!-- ===================== FLOW ZIGZAG ===================== -->
-
-<div class="section">
-
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>✨ Langkah 1 — Konsultasi Awal</h3>
-            <p>Kita mapping dulu masalah utama yang menghambat hidup Anda.</p>
-        </div>
     </div>
 
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🧭 Langkah 2 — Reset Arah Hidup</h3>
-            <p>Menyusun ulang arah hidup dengan metode praktis & spiritual.</p>
-        </div>
-    </div>
+  </div>
 
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🧠 Langkah 3 — Break Mental Block</h3>
-            <p>Melepaskan hambatan mental yang membuat Anda stuck.</p>
-        </div>
-    </div>
-
-    <div class="flow-item">
-        <div class="flow-inner">
-            <h3>🌱 Langkah 4 — Transformasi Diri</h3>
-            <p>Upgrade mindset & inner system agar perubahan bertahan lama.</p>
-        </div>
-    </div>
-
-</div>
-
-<!-- ===================== PRICE BOX ===================== -->
-<div class="section">
-    <div class="price-box">
-        <small>Early Bird</small>
-        <h2>Rp 1.400.000</h2>
-        <small>Harga normal Rp 3.000.000</small>
-        <a href="https://wa.me/62xxxxxxxxxxx" class="btn">Daftar via WhatsApp</a>
-    </div>
-</div>
-
-<!-- ===================== GARANSI ===================== -->
-<div class="section">
-    <div class="flow-item">
-        <div class="flow-inner" style="text-align:center;">
-            <h3>🔒 Garansi Perubahan</h3>
-            <p>Sesi pertama boleh diulang gratis jika tidak terasa efeknya.</p>
-        </div>
-    </div>
-</div>
-
-</body>
-</html>
+</section>
